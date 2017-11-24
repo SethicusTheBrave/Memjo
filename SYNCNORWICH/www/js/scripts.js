@@ -67,6 +67,15 @@ function play(object){
 	new Audio(object).play()
 }
 
+//more functions from Roland
+function clearAndFill(){
+
+	var searchId = document.getElementById("videosContent").classList;
+	
+	searchId.add("hide-content");
+
+}
+
 // on swipe left - transition to next page
 $(document).on('swipeleft', '.ui-page', function(event){    
     if(event.handled !== true) // stops event triggering more then once
