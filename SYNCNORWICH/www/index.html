@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Memjo</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+                                
+        <!--Script references AND css (THE ORDER OF THESE MATTER)-->
+        <script type="text/javascript" src="cordova.js"></script>			
+        <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" /> 
+		<link rel="stylesheet" href="css/custom.css" />
+		<script type="text/javascript" src="js/scripts.js"></script>
+					
+
+</head>
+<body>
+
+<!-- Start of Home page -->
+<div data-role="page" id="home">
+    <div class="outHeaderDiv">
+	<div class="header" data-role="header" data-id="persistent" data-position="fixed">      
+        <div data-role="navbar" class="custom-navbar">
+            <ul>
+                <li><a href="#home" data-transition="none" class='active-page'>Home</a></li>		
+                <li><a href="#other" data-transition="slide">Other</a></li>				
+            </ul>
+        </div>
+    </div>
+	</div>
+       
+    <div data-role="content" id="homeContent">
+	<h2 class="date"></h2>
+		<div class="example-class">
+			<p id="emptyListMessage">Example message here!</p>
+		</div>
+        	
+    </div> 
+    <div data-role="footer" class="footer" data-id="persistent" data-position="fixed">
+		<div class="example-class">
+			<p id="emptyListMessage">Example footer message here!</p>
+		</div>
+	</div>
+</div>
+<!-- End of Home page -->
+
+<!-- Start of other page -->
+<div data-role="page" id="other">   
+    <div data-role="header" data-id="persistent" data-position="fixed">
+        <div data-role="navbar"  class="custom-navbar">
+            <ul>
+                <li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
+                <li><a href="#Other" data-transition="slide" class="active-page">Other</a></li>			
+            </ul>
+        </div>
+    </div>  
+    <div data-role="content">
+		
+    </div>
+	<div data-role="footer" class="footer" data-id="persistent" data-position="fixed">
+		<div class="example-class">
+			<p id="emptyListMessage">Example footer message here!</p>
+		</div>
+	</div>
+</div>
+<!-- End of other page -->
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+*
+{
+   font-size: 1em;
+   font-family: Calibri;
+    content: "\f0c4";
+}
+
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html body .ui-bar-inherit {
+	background-color: 			#76A6EF /*{a-bar-background-color}*/;
+	border-color:	 		#ddd /*{a-bar-border}*/;
+	color: 					#FFFFFF /*{a-bar-color}*/;
+	text-shadow:none;
+	font-weight: bold;
+}
+
+/* Overiding JQM defaults for navbar theme */	
+.custom-navbar ul li a {
+    background: #7BABED !important;
+	text-shadow:none !important;
+	line-height:2em;
+	border:none;
+	border-right:solid !important;
+	border-color:#CED6E3 !important;
+}
+
+.active-page{
+	text-shadow:#FFFFFD !important;
+	color:#FFFFFF !important;
+
+}
+	
+.footer {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
