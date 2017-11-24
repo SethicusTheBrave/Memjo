@@ -10,7 +10,9 @@
 		<script type="text/javascript" src="js/jquery-ui.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" /> 
-		<link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" /> 
+        <link rel="stylesheet" href="css/bootstrap.min.css" />                
 		<script type="text/javascript" src="js/scripts.js"></script>
 					
 
@@ -51,13 +53,28 @@
         </div>
     </div>  
     <div data-role="content">
-		<div class="row">
-            <div class="col-md-6 col-xs-6 col-sm-6">
-                <div class="artist-image">
-                    
+            <div data-role="navbar"  class="custom-navbar">
+                    <ul>
+                        <li><a href="#toggle-bars" data-transition="slide" data-direction="reverse">Home</a></li>
+                        <li><a href="#toggle-squares" data-transition="slide" class="active-page">Music</a></li>			
+                    </ul>
+                </div>
+        <div class="music-container">
+            <div class="row col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <div class="artist-image">
+                        <img src="css/images/freddie-mercury.jpg"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <div class="artist-info">
+                        <p>Test info!</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <p>Test</p>
+		
     </div>
 </div>
 
