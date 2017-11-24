@@ -56,6 +56,12 @@ function showGrid(){
 	gridId.add("display-content");
 }
 
+function showSearchResults(){
+	var searchId = document.getElementById("search-results").classList;
+	
+	searchId.add("display-content");
+}
+
 //Roland function to get a random music from the playlist
 function play(object){
 	new Audio(object).play()
