@@ -26,3 +26,4 @@ function getVariable(){
 	// saving example variable numberToSave to localstorage under a unique identifier 01234
 	var test = localStorage.getItem('1234')
 }
+
