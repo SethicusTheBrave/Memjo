@@ -26,63 +26,63 @@ function getVariable(){
 	var test = localStorage.getItem('1234')
 }
 
-<<<<<<< HEAD
-=======
-// find template and compile it
-var templateSource = document.getElementById('results-template').innerHTML,
-template = Handlebars.compile(templateSource),
-resultsPlaceholder = document.getElementById('results'),
-playingCssClass = 'playing',
-audioObject = null;
-
-var fetchTracks = function (albumId, callback) {
-$.ajax({
-	url: 'https://api.spotify.com/v1/albums/' + albumId,
-	success: function (response) {
-		callback(response);
-	}
-});
-};
-
-var searchAlbums = function (query) {
-$.ajax({
-	url: 'localhost:8000',
-	data: {
-		q: query,
-		type: 'album'
-	},
-	success: function (response) {
-		resultsPlaceholder.innerHTML = template(response);
-	}
-});
-};
-
-results.addEventListener('click', function (e) {
-var target = e.target;
-if (target !== null && target.classList.contains('cover')) {
-	if (target.classList.contains(playingCssClass)) {
-		audioObject.pause();
-	} else {
-		if (audioObject) {
-			audioObject.pause();
-		}
-		fetchTracks(target.getAttribute('data-album-id'), function (data) {
-			audioObject = new Audio(data.tracks.items[0].preview_url);
-			audioObject.play();
-			target.classList.add(playingCssClass);
-			audioObject.addEventListener('ended', function () {
-				target.classList.remove(playingCssClass);
-			});
-			audioObject.addEventListener('pause', function () {
-				target.classList.remove(playingCssClass);
-			});
-		});
-	}
+function showSearch(){
+	var searchId = document.getElementById("search").classList;
+	var barsId = document.getElementById("bars").classList;
+	var gridId = document.getElementById("grid").classList;
+	
+	searchId.add("display-content");
+	barsId.remove("display-content");
+	gridId.remove("display-content");	
 }
+function showBars(){
+	var searchId = document.getElementById("search").classList;
+	var barsId = document.getElementById("bars").classList;
+	var gridId = document.getElementById("grid").classList;
+
+	searchId.remove("display-content");
+	barsId.add("display-content");
+	gridId.remove("display-content");
+}
+function showGrid(){
+	var searchId = document.getElementById("search").classList;
+	var barsId = document.getElementById("bars").classList;
+	var gridId = document.getElementById("grid").classList;
+	
+	searchId.remove("display-content");
+	barsId.remove("display-content");
+	gridId.add("display-content");
+}
+
+
+// on swipe left - transition to next page
+$(document).on('swipeleft', '.ui-page', function(event){    
+    if(event.handled !== true) // stops event triggering more then once
+    {    
+        var nextpage = $.mobile.activePage.next('[data-role="page"]');
+
+		if ($.mobile.activePage.attr('id') != "first page id"){
+			if (nextpage.length > 0) {
+            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+        }
+        event.handled = true;
+		}        
+    }
+    return false;         
 });
 
-document.getElementById('search-form').addEventListener('submit', function (e) {
-e.preventDefault();
-searchAlbums(document.getElementById('query').value);
-}, false);
->>>>>>> 3cfd2c26f0580ac8cb2412597b1307fc549e668d
+// on swipe right - transition to previous page
+$(document).on('swiperight', '.ui-page', function(event){     
+    if(event.handled !== true)
+    {      
+        var prevpage = $(this).prev('[data-role="page"]');
+
+		if ($.mobile.activePage.attr('id') != "last-page-id"){
+			if (prevpage.length > 0) {
+            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+        }
+        event.handled = true;
+		}        
+    }
+    return false;            
+});

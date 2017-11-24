@@ -36,3 +36,12 @@ html body .ui-bar-inherit {
 	position: absolute;
 	width: 100%;
 }
+
+#search, #bars, #grid {
+	display:none;
+}
+
+.display-content{
+	display:block !important;
+}
+
