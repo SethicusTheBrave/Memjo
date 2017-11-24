@@ -82,6 +82,7 @@ html body .ui-bar-inherit {
 margin-left: 20px;
 margin-top: 10px;
 
+
 }
 	
 .footer {
@@ -107,6 +108,11 @@ margin-top: 10px;
 #grid{
 	background-color: black !important;
 }
+
+
+
+
+
 
 .sidenav {
     height: 100%;
@@ -151,6 +157,19 @@ margin-top: 10px;
   .sidenav a {font-size: 18px;}
 }
 
+.favLeft{
+	align-content:right;
+	width:60px;
+}
+
 #FavouritesContainer{
 	display: none;
+}
+
+.searchResultImage{
+	max-width:100% !important;
+}
+
+.artist-image{
+	width:330px;
 }

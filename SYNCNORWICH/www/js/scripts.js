@@ -61,6 +61,11 @@ function showSearchResults(){
 	
 	searchId.add("display-content");
 }
+function showSearchFav(){
+	var searchId = document.getElementById("FavouritesContainer").classList;
+	
+	searchId.add("display-content");
+}
 
 function openNav(navName) {
     document.getElementById(navName).style.width = "250px";
@@ -81,12 +86,13 @@ function clearAndFill(){
 	var searchId = document.getElementById("videosContent").classList;
 	
 	searchId.add("hide-content");
+	showSearchFav();
 
 }
 
 function hideDefault()
 {
-	var searchId = document.getElementById("FavouritContainer").classList;
+	var searchId = document.getElementById("FavouritesContainer").classList;
 	
 	searchId.add("hide-content");
 
