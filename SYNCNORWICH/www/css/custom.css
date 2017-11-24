@@ -159,6 +159,19 @@ margin-top: 10px;
 	max-width:100% !important;
 }
 
+.artist-image-container{
+	width:320px;
+}	
+
+.artist-image-container-half{
+	width:160px;
+}	
+
 .artist-image{
-	width:330px;
+	width:90%;
+	margin: 0 auto;
+}
+
+.exampleClass{
+	width:100%;
 }
