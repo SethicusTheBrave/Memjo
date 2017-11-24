@@ -90,6 +90,16 @@ function clearAndFill(){
 
 }
 
+
+function showNormalMovies()
+{
+
+var searchId=document.getElementById("videosContent").classList;
+searchId.add("display-content");
+hideDefault();
+}
+
+
 function hideDefault()
 {
 	var searchId = document.getElementById("FavouritesContainer").classList;
