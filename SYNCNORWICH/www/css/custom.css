@@ -29,6 +29,42 @@ html body .ui-bar-inherit {
 	border-color:#CED6E3 !important;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .active-page{
 	text-shadow:#FFFFFD !important;
 	color:#F5951C !important;
@@ -57,6 +93,8 @@ margin-top: 10px;
 #search, #bars, #grid, #search-results {
 	display:none;
 }
+
+
 
 .display-content{
 	display:block !important;
@@ -111,4 +149,8 @@ margin-top: 10px;
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+#FavouritesContainer{
+	display: none;
 }

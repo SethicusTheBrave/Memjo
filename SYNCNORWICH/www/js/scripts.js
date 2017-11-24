@@ -84,6 +84,20 @@ function clearAndFill(){
 
 }
 
+function hideDefault()
+{
+	var searchId = document.getElementById("FavouritContainer").classList;
+	
+	searchId.add("hide-content");
+
+}
+
+function getFavourites(){
+
+//display new div
+
+}
+
 // on swipe left - transition to next page
 $(document).on('swipeleft', '.ui-page', function(event){    
     if(event.handled !== true) // stops event triggering more then once
