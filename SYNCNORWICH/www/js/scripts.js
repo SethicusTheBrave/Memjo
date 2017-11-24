@@ -26,6 +26,12 @@ function getVariable(){
 	var test = localStorage.getItem('1234')
 }
 
+//Roland function to get a random music from the playlist
+function play(object){
+	var audio = document.getElementById(object);
+	audio.play();
+			  }
+
 <<<<<<< HEAD
 =======
 // find template and compile it
