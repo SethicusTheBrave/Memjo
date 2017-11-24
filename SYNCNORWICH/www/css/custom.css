@@ -165,3 +165,11 @@ margin-top: 10px;
 #FavouritesContainer{
 	display: none;
 }
+
+.searchResultImage{
+	max-width:100% !important;
+}
+
+.artist-image{
+	width:330px;
+}
