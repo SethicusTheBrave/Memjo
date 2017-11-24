@@ -8,8 +8,8 @@
 .ui-bar-a,
 .ui-page-theme-a .ui-bar-inherit,
 html body .ui-bar-inherit {
-	background-color: 			#76A6EF /*{a-bar-background-color}*/;
-	border-color:	 		#ddd /*{a-bar-border}*/;
+	background-color: 			#55C0E4 /*{a-bar-background-color}*/;
+	border-color:	 		#C1A2CC /*{a-bar-border}*/;
 	color: 					#FFFFFF /*{a-bar-color}*/;
 	text-shadow:none;
 	font-weight: bold;
@@ -17,7 +17,7 @@ html body .ui-bar-inherit {
 
 /* Overiding JQM defaults for navbar theme */	
 .custom-navbar ul li a {
-    background: #7BABED !important;
+    background: #55C0E4 !important;
 	text-shadow:none !important;
 	line-height:2em;
 	border:none;
@@ -27,8 +27,12 @@ html body .ui-bar-inherit {
 
 .active-page{
 	text-shadow:#FFFFFD !important;
-	color:#FFFFFF !important;
-
+	color:#F5951C !important;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 .row{
 	margin-top:  10px !important;
@@ -40,12 +44,16 @@ html body .ui-bar-inherit {
 	width: 100%;
 }
 
-#search, #bars, #grid {
+#search, #bars, #grid, #search-results {
 	display:none;
 }
 
 .display-content{
 	display:block !important;
+}
+
+.hide-content{
+	display: none;
 }
 
 #grid{
