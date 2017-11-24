@@ -23,14 +23,18 @@
 <!-- Start of Home page -->
 <div data-role="page" id="home">
     <div class="outHeaderDiv">
-	<div class="header" data-role="header" data-id="persistent" data-position="fixed">      
+	<div class="header" data-role="header" data-id="persistent" data-position="fixed"> 
+            
         <div data-role="navbar" class="custom-navbar">
-            <ul>
-                <li><a href="#home" data-transition="none" class='active-page'>Home</a></li>		
-                <li><a href="#music" data-transition="slide">Music</a></li>		
-                  <li><a href="#photos" data-transition="slide">Photos</a></li>
-                  <li><a href="#Videos" data-transition="slide" data-direction="reverse">Video</a></li>
-            </ul>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav('homeSideNav')">&#9776; Menu</span>
+                
+            <div id="homeSideNav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('homeSideNav')">&times;</a>
+                <a href="#home" onclick="closeNav('homeSideNav')">Home</a>
+                <a href="#music" onclick="closeNav('homeSideNav')">Music</a>
+                <a href="#photos" onclick="closeNav('homeSideNav')">Photos</a>
+                <a href="#Videos" onclick="closeNav('homeSideNav')">Video</a>
+            </div>    
         </div>
     </div>
 	</div>
@@ -50,12 +54,15 @@
         <div class="outHeaderDiv">
         <div class="header" data-role="header" data-id="persistent" data-position="fixed">      
             <div data-role="navbar" class="custom-navbar">
-                <ul>
-                    <li><a href="#home" data-transition="none" >Home</a></li>		
-                    <li><a href="#music" data-transition="slide">Music</a></li>		
-                      <li><a href="#photos" data-transition="slide">Photos</a></li>
-                      <li><a href="#Videos" data-transition="slide" data-direction="reverse" class='active-page'>Video</a></li>
-                </ul>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav('videosSideNav')">&#9776; Menu</span>
+                    
+                <div id="videosSideNav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('videosSideNav')">&times;</a>
+                    <a href="#home" onclick="closeNav('videosSideNav')">Home</a>
+                    <a href="#music" onclick="closeNav('videosSideNav')">Music</a>
+                    <a href="#photos" onclick="closeNav('videosSideNav')">Photos</a>
+                    <a href="#Videos" onclick="closeNav('videosSideNav')">Video</a>
+                </div> 
             </div>
         </div>
         </div>
@@ -89,13 +96,15 @@
 <div data-role="page" id="music">   
     <div data-role="header" data-id="persistent" data-position="fixed">
         <div data-role="navbar"  class="custom-navbar">
-            <ul>
-                <li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
-                <li><a href="#music" data-transition="slide" class="active-page">Music</a></li>
-                  <li><a href="#photos" data-transition="slide">Photos</a></li>
-                  <li><a href="#Videos" data-transition="slide" data-direction="reverse">Video</a></li>
-             
-            </ul>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav('musicSideNav')">&#9776; Menu</span>
+                
+            <div id="musicSideNav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('musicSideNav')">&times;</a>
+                <a href="#home" onclick="closeNav('musicSideNav')">Home</a>
+                <a href="#music" onclick="closeNav('musicSideNav')">Music</a>
+                <a href="#photos" onclick="closeNav('musicSideNav')">Photos</a>
+                <a href="#Videos" onclick="closeNav('musicSideNav')">Video</a>
+            </div>
         </div>
     </div>  
     <div data-role="navbar" class="custom-navbar-toggle" data-position="fixed" data-id="persistent">
@@ -310,12 +319,15 @@
     <div class="outHeaderDiv">
 	<div class="header" data-role="header" data-id="persistent" data-position="fixed">      
         <div data-role="navbar" class="custom-navbar">
-            <ul>
-                <li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>		
-                <li><a href="#music" data-transition="slide" data-direction="reverse">Music</a></li>	
-                  <li><a href="#photos" data-transition="slide" class="active-page">Photos</a></li>					
-                  <li><a href="#Videos" data-transition="slide" data-direction="reverse">Video</a></li>
-            </ul>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav('photoSideNav')">&#9776; Menu</span>
+                
+            <div id="photoSideNav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav('photoSideNav')">&times;</a>
+                <a href="#home" onclick="closeNav('photoSideNav')">Home</a>
+                <a href="#music" onclick="closeNav('photoSideNav')">Music</a>
+                <a href="#photos" onclick="closeNav('photoSideNav')">Photos</a>
+                <a href="#Videos" onclick="closeNav('photoSideNav')">Video</a>
+            </div>
         </div>
     </div>
 	</div>

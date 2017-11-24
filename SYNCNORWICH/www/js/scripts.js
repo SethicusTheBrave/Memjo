@@ -62,6 +62,14 @@ function showSearchResults(){
 	searchId.add("display-content");
 }
 
+function openNav(navName) {
+    document.getElementById(navName).style.width = "250px";
+}
+
+function closeNav(navName) {
+    document.getElementById(navName).style.width = "0";
+}
+
 //Roland function to get a random music from the playlist
 function play(object){
 	new Audio(object).play()
