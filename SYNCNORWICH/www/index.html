@@ -33,6 +33,7 @@
                 <a href="#music" onclick="closeNav('homeSideNav')">Music</a>
                 <a href="#photos" onclick="closeNav('homeSideNav')">Photos</a>
                 <a href="#Videos" onclick="closeNav('homeSideNav')">Video</a>
+                <a href="#Recordings" onclick="CloseNav('homeSideNav')">Voice</a>
             </div>    
         </div>
     </div>
@@ -265,31 +266,34 @@
 <!-- End of photos page -->
 
 <!-- Begining of the Recordings page -->
-<div data-role="Page" id="Recordings">
-	<div class="outHeaderDiv">
-	<div class ="header" data-role="header" data-id="Persistent" data-position="fixed">
-		<div data-role="navbar" class="custom-navbar">
-			<ul>
-				<li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
-				<li><a href="#music" data-transition="slide" data-direction="reverse">Music</a></li>
-				<li><a href="#photos" data-transition="slide" data-direction="reverse">Photos</a></li>
-                <li><a href="#Videos" data-transition="slide" data-direction="reverse">Video</a></li>
-				<li><a href="#Recordings" data-transition="slide" class="active-page">Recording</a></li>
-			</ul>
-		</div>
-	</div>
+    <div data-role="page" id="Recordings">
+        <div class="outHeaderDiv">
+            <div class="header" data-role="header" data-id="persistent" data-position="fixed">
+                <div data-role="navbar" class="custom-navbar">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav('photoSideNav')">&#9776; Menu</span>
 
-    <div data-role="content" id="recordingContent">
-        <div class="row col-md-12 col-xs-12 col-md-12">
-            <div class="row col-md-12 col-xs-12 col-md-12">
-                <div class="recording">
-                    <img onclick="javascript.play('Vocal Recording/queen.mp3')" src="css/images/volumepng" width="100%" />
-
+                    <div id="photoSideNav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('photoSideNav')">&times;</a>
+                        <a href="#home" onclick="closeNav('photoSideNav')">Home</a>
+                        <a href="#music" onclick="closeNav('photoSideNav')">Music</a>
+                        <a href="#photos" onclick="closeNav('photoSideNav')">Photos</a>
+                        <a href="#Videos" onclick="closeNav('photoSideNav')">Video</a>
+                    </div>
                 </div>
             </div>
-
         </div>
-<!-- End of the Recordings page -->
+
+        <div data-role="content" id="RecordingContent">
+            <div class="row col-md-12 col-xs-12 col-md-12">
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <div class="aRecording">
+                        <img onclick="javascript:play('Vocal Recordings/queen.mp3')" src="css/images/volume.png" wdith="20%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- End of the Recordings page -->
 
 </body>
 </html>
