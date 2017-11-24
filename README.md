@@ -1,2 +1,2 @@
 # Memjo
-The repositry of the memjo development group
+The repository of the memjo development group: a memory journal for those with Alzheimer's.
