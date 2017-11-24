@@ -61,6 +61,13 @@ function play(object){
 	new Audio(object).play()
 }
 
+//more functions from Roland
+function clearAndFill(){
+
+
+
+}
+
 // on swipe left - transition to next page
 $(document).on('swipeleft', '.ui-page', function(event){    
     if(event.handled !== true) // stops event triggering more then once
