@@ -26,6 +26,7 @@ function getVariable(){
 	var test = localStorage.getItem('1234')
 }
 
+
 function showSearch(){
 	var searchId = document.getElementById("search").classList;
 	var barsId = document.getElementById("bars").classList;
@@ -54,6 +55,11 @@ function showGrid(){
 	gridId.add("display-content");
 }
 
+//Roland function to get a random music from the playlist
+function play(object){
+	var audio = document.getElementById(object);
+	audio.play();
+}
 
 // on swipe left - transition to next page
 $(document).on('swipeleft', '.ui-page', function(event){    
