@@ -27,7 +27,8 @@
         <div data-role="navbar" class="custom-navbar">
             <ul>
                 <li><a href="#home" data-transition="none" class='active-page'>Home</a></li>		
-                <li><a href="#music" data-transition="slide">Music</a></li>				
+                <li><a href="#music" data-transition="slide">Music</a></li>		
+				  <li><a href="#photos" data-transition="slide">Photos</a></li>
             </ul>
         </div>
     </div>
@@ -49,7 +50,8 @@
         <div data-role="navbar"  class="custom-navbar">
             <ul>
                 <li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
-                <li><a href="#music" data-transition="slide" class="active-page">Music</a></li>			
+                <li><a href="#music" data-transition="slide" class="active-page">Music</a></li>
+				  <li><a href="#photos" data-transition="slide">Photos</a></li>
             </ul>
         </div>
     </div>  
@@ -143,6 +145,27 @@
             </div>
     </div>
 </div>
+
+<!-- Start of photos page -->
+<div data-role="page" id="photos">
+    <div class="outHeaderDiv">
+	<div class="header" data-role="header" data-id="persistent" data-position="fixed">      
+        <div data-role="navbar" class="custom-navbar">
+            <ul>
+                <li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>		
+                <li><a href="#music" data-transition="slide" data-direction="reverse">Music</a></li>	
+				  <li><a href="#photos" data-transition="slide" class="active-page">Photos</a></li>					
+            </ul>
+        </div>
+    </div>
+	</div>
+       
+    <div data-role="content" id="photosContent">
+		<div class="row col-md-12 col-sm-12 col-xs-12 col-lg-12">
+        	
+    </div> 
+</div>
+<!-- End of photos page -->
 
 </body>
 </html>
