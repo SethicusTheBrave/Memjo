@@ -14,6 +14,7 @@ $(document).ready(function () {
 // global variables
 var exampleVariable = 1;
 var exampleVariable2 = "test";
+var x = "Music/queen.mp3";
 
 // example of local storage save
 function saveVariable(){
@@ -56,9 +57,9 @@ function showGrid(){
 }
 
 //Roland function to get a random music from the playlist
-function play(object){
-	var audio = document.getElementById(object);
-	audio.play();
+function mercury(object){
+	new Audio(object).play();
+
 }
 
 // on swipe left - transition to next page
