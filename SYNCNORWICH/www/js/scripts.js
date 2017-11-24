@@ -14,6 +14,7 @@ $(document).ready(function () {
 // global variables
 var exampleVariable = 1;
 var exampleVariable2 = "test";
+var x = "Music/queen.mp3";
 
 // example of local storage save
 function saveVariable(){

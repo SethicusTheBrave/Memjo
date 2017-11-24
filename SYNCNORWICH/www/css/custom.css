@@ -30,6 +30,9 @@ html body .ui-bar-inherit {
 	color:#FFFFFF !important;
 
 }
+.row{
+	margin-top:  10px !important;
+}
 	
 .footer {
 	bottom: 0;
@@ -43,5 +46,9 @@ html body .ui-bar-inherit {
 
 .display-content{
 	display:block !important;
+}
+
+#grid{
+	background-color: black !important;
 }
 
