@@ -30,41 +30,6 @@ html body .ui-bar-inherit {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .active-page{
 	text-shadow:#FFFFFD !important;
 	color:#F5951C !important;
@@ -157,32 +122,6 @@ margin-top: 10px;
   .sidenav a {font-size: 18px;}
 }
 
-.favLeft{
-	align-content:right;
-	width:60px;
-}
-
 #FavouritesContainer{
 	display: none;
-}
-
-.searchResultImage{
-	max-width:100% !important;
-}
-
-.artist-image-container{
-	width:320px;
-}	
-
-.artist-image-container-half{
-	width:160px;
-}	
-
-.artist-image{
-	width:90%;
-	margin: 0 auto;
-}
-
-.exampleClass{
-	width:100%;
 }
