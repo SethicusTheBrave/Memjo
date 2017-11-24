@@ -15,6 +15,10 @@ html body .ui-bar-inherit {
 	font-weight: bold;
 }
 
+.ui-navbar{
+	padding: 10px;
+}
+
 /* Overiding JQM defaults for navbar theme */	
 .custom-navbar ul li a {
     background: #55C0E4 !important;
@@ -104,6 +108,49 @@ margin-top: 10px;
 	background-color: black !important;
 }
 
-#Favourites{
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px !important;
+    text-decoration: none !important;
+    font-size: 25px !important;
+    color: #818181 !important;
+    display: block !important;
+	transition: 0.3s !important;
+	background-color: inherit !important;
+	text-shadow: none !important;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute !important;
+    top: 0 !important;
+    right: 25px !important;
+    font-size: 36px !important;
+	margin-left: 50px !important;
+	border-width: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#FavouritesContainer{
 	display: none;
 }
