@@ -9,7 +9,6 @@
 // this fires when app first loads when testing in a browser
 $(document).ready(function () {
     console.log('ready');
-    setup();
 });
   
 // global variables
