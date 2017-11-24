@@ -57,8 +57,7 @@ function showGrid(){
 
 //Roland function to get a random music from the playlist
 function play(object){
-	var audio = document.getElementById(object);
-	audio.play();
+	new Audio(object).play()
 }
 
 // on swipe left - transition to next page
