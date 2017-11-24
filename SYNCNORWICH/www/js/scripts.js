@@ -70,7 +70,9 @@ function play(object){
 //more functions from Roland
 function clearAndFill(){
 
-
+	var searchId = document.getElementById("videosContent").classList;
+	
+	searchId.add("hide-content");
 
 }
 
