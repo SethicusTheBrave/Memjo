@@ -265,19 +265,30 @@
 <!-- End of photos page -->
 
 <!-- Begining of the Recordings page -->
-<div data-role="Page" id="photos">
+<div data-role="Page" id="Recordings">
 	<div class="outHeaderDiv">
 	<div class ="header" data-role="header" data-id="Persistent" data-position="fixed">
 		<div data-role="navbar" class="custom-navbar">
 			<ul>
 				<li><a href="#home" data-transition="slide" data-direction="reverse">Home</a></li>
 				<li><a href="#music" data-transition="slide" data-direction="reverse">Music</a></li>
-				<li><a href="#photos" data-transition="slide" class="active-page">Photos</a></li>
+				<li><a href="#photos" data-transition="slide" data-direction="reverse">Photos</a></li>
                 <li><a href="#Videos" data-transition="slide" data-direction="reverse">Video</a></li>
-				<li><a href="#Recordings" data-transition="slide" data-direction="reverse">Recording</a></li>
+				<li><a href="#Recordings" data-transition="slide" class="active-page">Recording</a></li>
 			</ul>
 		</div>
 	</div>
+
+    <div data-role="content" id="recordingContent">
+        <div class="row col-md-12 col-xs-12 col-md-12">
+            <div class="row col-md-12 col-xs-12 col-md-12">
+                <div class="recording">
+                    <img onclick="javascript.play('Vocal Recording/queen.mp3')" src="css/images/volumepng" width="100%" />
+
+                </div>
+            </div>
+
+        </div>
 <!-- End of the Recordings page -->
 
 </body>
