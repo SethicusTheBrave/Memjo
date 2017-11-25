@@ -6,14 +6,6 @@
    
 }
 
-.ui-page, body{
-	background-image:
-    linear-gradient(
-       
-      white, #fffef4
-	  
-    );
-}
 .ui-bar-a,
 .ui-page-theme-a .ui-bar-inherit,
 html body .ui-bar-inherit {
@@ -72,6 +64,44 @@ h3{
 
 .homepage-row{
 	margin: 0 0 10px 0;
+	padding: 0 30px 0 30px;
+}
+
+@media screen and (min-width: 900px) {
+    .homepage-row{
+		margin: 0 0 10px 0;
+		padding: 0 170px 0 170px;
+	}
+
+	h1{
+		font-size: 5em !important;
+		padding: 10px !important;
+	}
+
+	.col-sm-6{
+		padding:25px !important;
+	}
+
+	.custom-navbar{
+		padding:40px;
+	}
+
+	.photo-container{
+		margin-top: 70px;
+	}
+
+	.music-custom-navbar{
+		padding: 0 0 305px 0 !important;
+	}
+
+	.artist-image-container-half{
+		width: 100% !important;
+		padding:10px !important;
+	}
+
+	#query{
+		padding:20px;
+	}
 }
 
 .centerVideo{
@@ -95,12 +125,21 @@ margin-top: 10px;
 	display:block !important;
 }
 
+.music-custom-navbar{
+	padding:20px !important;
+}
+
 .hide-content{
 	display: none;
 }
 
 .music-grid, .photo-grid{
 	padding: 0 0 10px 0;
+}
+
+
+.photo-container{
+	margin:0 auto;
 }
 
 .hamburger-menu{
@@ -237,6 +276,7 @@ margin-top: 10px;
 	background-image: linear-gradient(#4C69BA, #3B55A0);
 	/*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
 	text-shadow: 0 -1px 0 #354C8C;
+	color: white!important;	
   }
   .loginBtn--facebook:before {
 	border-right: #364e92 1px solid;
@@ -255,6 +295,7 @@ margin-top: 10px;
 	background: #DD4B39!important;
 	text-align: center;
 	text-shadow: none !important;
+	color: white!important;	
   }
   .loginBtn--google:before {
 	border-right: #BB3F30 1px solid;
