@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/scripts.js"></script>
 
@@ -21,13 +22,87 @@
 
 <!-- -->
 <body>
+    <!-- Start of login page -->
+    <div data-role="page" id="login">
+        <div id="loading-icon">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+                <img id="ajax-loader" src="css/images/ajax-loader.gif" width="100%">
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+        <div data-role="content" id="loginContent">
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">
+                    <img class="logo" src="css/images/icon.png">
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10">
+                    <form>
+                        <input type="email" id="login-email" value="" class="form-control" placeholder="email" />
+                        <input type="password" id="login-password" value="" class="form-control" placeholder="password" />
+                    </form>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+
+            <div class="row" style="margin-top:0 !important;">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10" style="padding:0;">
+                    <div class="col-xs-6" style="padding-right:3px;">
+                        <button clidass="signIn" onclick="signIn()">
+                            Sign In
+                        </button>
+                    </div>
+                    <div class="col-xs-6" style="padding-left:3px;">
+                        <button clidass="signUp">
+                            Sign Up
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10">
+                    <button class="loginBtn loginBtn--facebook">
+                        Login with Facebook
+                    </button>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-1"></div>
+                <div class="col-xs-10">
+                    <button class="loginBtn loginBtn--google">
+                        Login with Google
+                    </button>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    <!-- End of Home page -->
 
     <!-- Start of Home page -->
     <div data-role="page" id="home">
-        <div class="outHeaderDiv">
+        <!-- <div class="outHeaderDiv">
             <div class="header" data-role="header" data-id="persistent" data-position="fixed">
 
                 <div data-role="navbar" class="custom-navbar">
+<<<<<<< HEAD
                     <span style="font-size:30px;cursor:pointer" onclick="openNav('homeSideNav')">&#9776; Menu</span>
 
                     <div id="homeSideNav" class="sidenav">
@@ -36,18 +111,70 @@
                         <a href="#music" onclick="closeNav('homeSideNav')">Music</a>
                         <a href="#photos" onclick="closeNav('homeSideNav')">Photos</a>
                         <a href="#Videos" onclick="closeNav('homeSideNav')">Video</a>
+=======
+                    <span class="hamburger-menu" onclick="openNav('homeSideNav')">&#9776; Home</span>
+
+                    <div id="homeSideNav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('homeSideNav')">&times;</a>
+                        <a href="#home" onclick="closeNav('homeSideNav')"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <a href="#music" onclick="closeNav('homeSideNav')"><i class="fa fa-music" aria-hidden="true"></i>  Music</a>
+                        <a href="#photos" onclick="closeNav('homeSideNav')"><i class="fa fa-camera" aria-hidden="true"></i>  Photos</a>
+                        <a href="#Videos" onclick="closeNav('homeSideNav')"><i class="fa fa-video-camera" aria-hidden="true"></i>  Video</a>
+                        <a href="#recording" onclick="closeNav('homeSideNav')"><i class="fa fa-microphone" aria-hidden="true"></i>  Voice</a>
+>>>>>>> 38d63fc78f9f6796969b4d42641b21a4a779caf9
                     </div>
+                </div> 
+            </div>
+        </div> -->
+
+        <div data-role="content" id="homeContent">
+            <h1>
+                <strong>Jane's Journal</strong>
+            </h1>
+            <div class="row homepage-row">
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <a href="#photos" data-transition="slide">
+                        <img src="assets/ImagePlaceholder_photopage.png" width="100%">
+                    </a>
+                    <h3>Photos</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <a href="#music" data-transition="slide">
+                        <img src="assets/musicPlaceholder_1.png" width="100%">
+                    </a>
+                    <h3>Music</h3>
+                </div>
+            </div>
+
+            <div class="row homepage-row">
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <a href="#Videos" data-transition="slide">
+                        <img src="assets/videoPlaceholder.png" width="100%">
+                    </a>
+                    <h3>Videos</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <a href="#recording" data-transition="slide">
+                        <img src="assets/microphonePlaceholder.png" width="100%">
+                    </a>
+                    <h3>Voice</h3>
+                </div>
+            </div>
+
+            <div class="row homepage-row">
+                <div class="col-md-3 col-xs-3 col-sm-3">
+
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <img src="assets/videoPlaceholder.png" width="100%">
+                    <h3>Journal</h3>
+                </div>
+                <div class="col-md-3 col-xs-3 col-sm-3">
+
                 </div>
             </div>
         </div>
 
-        <div data-role="content" id="homeContent">
-            <h2 class="date"></h2>
-            <div class="example-class">
-                <p id="emptyListMessage">Example message here</p>
-            </div>
-
-        </div>
     </div>
     <!-- End of Home page -->
 
@@ -56,6 +183,7 @@
         <div class="outHeaderDiv">
             <div class="header" data-role="header" data-id="persistent" data-position="fixed">
                 <div data-role="navbar" class="custom-navbar">
+<<<<<<< HEAD
                     <span style="font-size:30px;cursor:pointer" onclick="openNav('videosSideNav')">&#9776; Menu</span>
 
                     <div id="videosSideNav" class="sidenav">
@@ -64,56 +192,71 @@
                         <a href="#music" onclick="closeNav('videosSideNav')">Music</a>
                         <a href="#photos" onclick="closeNav('videosSideNav')">Photos</a>
                         <a href="#Videos" onclick="closeNav('videosSideNav')">Video</a>
+=======
+                    <span class="hamburger-menu" onclick="openNav('videosSideNav')">&#9776; Videos</span>
+
+                    <div id="videosSideNav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('videosSideNav')">&times;</a>
+                        <a href="#home" onclick="closeNav('videosSideNav')">
+                            <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <a href="#music" onclick="closeNav('videosSideNav')">
+                            <i class="fa fa-music" aria-hidden="true"></i> Music</a>
+                        <a href="#photos" onclick="closeNav('videosSideNav')">
+                            <i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
+                        <a href="#Videos" onclick="closeNav('videosSideNav')">
+                            <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
+                        <a href="#recording" onclick="closeNav('videosSideNav')">
+                            <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+
+>>>>>>> 38d63fc78f9f6796969b4d42641b21a4a779caf9
                     </div>
                 </div>
             </div>
         </div>
 
         <div data-role="content" id="videosContent">
+<<<<<<< HEAD
             <div class="alignButton">
                     <img onclick="clearAndFill()" src="assets/favourite.png">
+=======
+            <div id="videoContainer">
+                <div class="videoItem">
+                    <div class="row">
+                        <img style="width:80px; float:right;padding-right:30px;" onclick="clearAndFill()" src="assets/favourite.png">
+                        </button>
+                    </div>
+>>>>>>> 38d63fc78f9f6796969b4d42641b21a4a779caf9
                 </div>
-            <div class="centerVideo">    
-            <div class="row">
-                        
-                    <img src="assets/videoPlaceholder.png">
-            </div>   
-            <div class="row">
-                        
-                    <img src="assets/videoPlaceholder.png">
-                        
-            </div>
-            </div>
-            </div>
-             
-            <div id="FavouritesContainer">
-                <div class ="favouriteItem">
-
-                <!--need to change faf -->
                 <div class="row">
+<<<<<<< HEAD
                     <img style="width:80px; float:right;padding-right:40px;" src="assets/favouriteHover.png">
+=======
+                    <div class="col-xs-12">
+                        <img class="video-placeholder" src="assets/videoPlaceholder.png">
+                    </div>
+>>>>>>> 38d63fc78f9f6796969b4d42641b21a4a779caf9
                 </div>
-                <div class="centerVideo">  
                 <div class="row">
-                
+                    <div class="col-xs-12">
+                        <img class="video-placeholder" src="assets/videoPlaceholder.png">
+                    </div>
                 </div>
-                <img src="assets/videoPlaceholder.png">
-                
-                </div>
-                </div>
+            </div>
 
+            <div id="favouritesContainer">
+                <div class="favouriteItem">
+                    <!--need to change faf -->
+                    <div class="row">
+                        <img style="width:80px; float:right;padding-right:30px;" onclick="showNormalMovies()" src="assets/favouriteHover.png">
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <img class="video-placeholder" src="assets/videoPlaceholder.png">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
-
-
-
-
-
-    </div>
-
-    </div>
     </div>
     <!-- End of Videos page -->
 
@@ -121,6 +264,7 @@
     <div data-role="page" id="music">
         <div data-role="header" data-id="persistent" data-position="fixed">
             <div data-role="navbar" class="custom-navbar">
+<<<<<<< HEAD
                 <span style="font-size:30px;cursor:pointer" onclick="openNav('musicSideNav')">&#9776; Menu</span>
 
                 <div id="musicSideNav" class="sidenav">
@@ -129,6 +273,22 @@
                     <a href="#music" onclick="closeNav('musicSideNav')">Music</a>
                     <a href="#photos" onclick="closeNav('musicSideNav')">Photos</a>
                     <a href="#Videos" onclick="closeNav('musicSideNav')">Video</a>
+=======
+                <span class="hamburger-menu" onclick="openNav('musicSideNav')">&#9776; Music</span>
+
+                <div id="musicSideNav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav('musicSideNav')">&times;</a>
+                    <a href="#home" onclick="closeNav('musicSideNav')">
+                        <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    <a href="#music" onclick="closeNav('musicSideNav')">
+                        <i class="fa fa-music" aria-hidden="true"></i> Music</a>
+                    <a href="#photos" onclick="closeNav('musicSideNav')">
+                        <i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
+                    <a href="#Videos" onclick="closeNav('musicSideNav')">
+                        <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
+                    <a href="#recording" onclick="closeNav('musicSideNav')">
+                        <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+>>>>>>> 38d63fc78f9f6796969b4d42641b21a4a779caf9
                 </div>
             </div>
         </div>
@@ -188,151 +348,161 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="bars">
-            <div class="row col-xs-12">
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+            <div id="bars">
+                <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-xs-12">
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="artist-image-container-half">
+                            <div class="artist-image">
+                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row col-xs-12">
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row col-xs-12">
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row col-xs-12">
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row col-xs-12">
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row col-xs-12">
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="artist-image-container-half">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder.png" class="exampleClass">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="grid">
+            <div id="grid">
 
-            <!-- bootstrap container for the images update-->
-            <div class="music-container">
-                <!-- 2 columns in a row-->
-                <div class="row col-md-12 col-xs-12 col-md-12">
-                    <div class="col-md-6 col-xs-6 col-sm-6">
-                        <div class="artist-image">
-                            <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="css/images/mercury.jpg">
+                <!-- bootstrap container for the images update-->
+                <div class="music-container">
+                    <div class="row music-grid">
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6">
-                        <div class="artist-image">
-                            <img onclick="play('Music/queen.mp3')" src="css/images/mercury.jpg">
-                        </div>
-                    </div>
-                </div>
 
-
-                <!-- 2 columns in a row-->
-                <div class="row col-md-12 col-xs-12 col-md-12">
-                    <div class="col-md-6 col-xs-6 col-sm-6">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="css/images/mercury.jpg">
+                    <div class="row music-grid">
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="css/images/mercury.jpg">
+                    <div class="row music-grid">
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row col-md-12 col-xs-12 col-md-12">
-                    <div class="col-md-6 col-xs-6 col-sm-6">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="css/images/mercury.jpg">
+                    <div class="row music-grid">
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xs-6 col-sm-6">
-                        <div class="artist-image">
-                            <img onclick="javascript:play('Music/queen.mp3')" src="css/images/mercury.jpg">
+                        <div class="col-md-6 col-xs-6 col-sm-6">
+                            <div class="grid-image">
+                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/musicPlaceholder_1.png">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     </div>
     </div>
@@ -343,6 +513,7 @@
         <div class="outHeaderDiv">
             <div class="header" data-role="header" data-id="persistent" data-position="fixed">
                 <div data-role="navbar" class="custom-navbar">
+<<<<<<< HEAD
                     <span style="font-size:30px;cursor:pointer" onclick="openNav('photoSideNav')">&#9776; Menu</span>
 
                     <div id="photoSideNav" class="sidenav">
@@ -351,45 +522,63 @@
                         <a href="#music" onclick="closeNav('photoSideNav')">Music</a>
                         <a href="#photos" onclick="closeNav('photoSideNav')">Photos</a>
                         <a href="#Videos" onclick="closeNav('photoSideNav')">Video</a>
+=======
+                    <span class="hamburger-menu" onclick="openNav('photoSideNav')">&#9776; Photos</span>
+
+                    <div id="photoSideNav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('photoSideNav')">&times;</a>
+                        <a href="#home" onclick="closeNav('photoSideNav')">
+                            <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <a href="#music" onclick="closeNav('photoSideNav')">
+                            <i class="fa fa-music" aria-hidden="true"></i> Music</a>
+                        <a href="#photos" onclick="closeNav('photoSideNav')">
+                            <i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
+                        <a href="#Videos" onclick="closeNav('photoSideNav')">
+                            <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
+                        <a href="#recording" onclick="closeNav('photoSideNav')">
+                            <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+>>>>>>> 38d63fc78f9f6796969b4d42641b21a4a779caf9
                     </div>
                 </div>
             </div>
         </div>
 
         <div data-role="content" id="photosContent">
-            <div class="row col-md-12 col-xs-12 col-md-12">
-                <div class="col-md-6 col-xs-6 col-sm-6">
-                    <div class="artist-image">
-                        <img src="css/images/ImagePlaceholder_photopage.png" width="100%">
+            <div class="photo-container">
+                <div class="row photo-grid">
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png" title="test">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xs-6 col-sm-6">
-                    <div class="artist-image">
-                        <img src="css/images/ImagePlaceholder_photopage.png" width="100%">
+                <div class="row photo-grid">
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row col-md-12 col-xs-12 col-md-12">
-                <div class="col-md-6 col-xs-6 col-sm-6">
-                    <div class="artist-image">
-                        <img src="css/images/ImagePlaceholder_photopage.png" width="100%">
+                <div class="row photo-grid">
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-xs-6 col-sm-6">
-                    <div class="artist-image">
-                        <img src="css/images/ImagePlaceholder_photopage.png" width="100%">
-                    </div>
-                </div>
-            </div>
-            <div class="row col-md-12 col-xs-12 col-md-12">
-                <div class="col-md-6 col-xs-6 col-sm-6">
-                    <div class="artist-image">
-                        <img src="css/images/ImagePlaceholder_photopage.png" width="100%">
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-6 col-sm-6">
-                    <div class="artist-image">
-                        <img src="css/images/ImagePlaceholder_photopage.png" width="100%">
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -397,8 +586,9 @@
     </div>
     <!-- End of photos page -->
 
-                 <!-- Start of Home page -->
+    <!-- Start of Voice page -->
     <div data-role="page" id="recording">
+<<<<<<< HEAD
             <div class="outHeaderDiv">
                 <div class="header" data-role="header" data-id="persistent" data-position="fixed">
     
@@ -412,21 +602,75 @@
                             <a href="#photos" onclick="closeNav('recordingSideNav')">Photos</a>
                             <a href="#Videos" onclick="closeNav('recordingSideNav')">Video</a>
                         </div>
+=======
+        <div class="outHeaderDiv">
+            <div class="header" data-role="header" data-id="persistent" data-position="fixed">
+
+                <div data-role="navbar" class="custom-navbar">
+                    <span class="hamburger-menu" onclick="openNav('recordingSideNav')">&#9776; Voice</span>
+
+                    <div id="recordingSideNav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('recordingSideNav')">&times;</a>
+                        <a href="#home" onclick="closeNav('recordingSideNav')">
+                            <i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <a href="#music" onclick="closeNav('recordingSideNav')">
+                            <i class="fa fa-music" aria-hidden="true"></i> Music</a>
+                        <a href="#photos" onclick="closeNav('recordingSideNav')">
+                            <i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
+                        <a href="#Videos" onclick="closeNav('recordingSideNav')">
+                            <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
+                        <a href="#recording" onclick="closeNav('recordingSideNav')">
+                            <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+
+>>>>>>> 38d63fc78f9f6796969b4d42641b21a4a779caf9
                     </div>
                 </div>
             </div>
-    
-            <div data-role="content" id="recordingContent">
-                <div class="row col-md-12 col-xs-12 col-md-12">
-                        <div class="recording">
-                            <img onclick="javascript.play('Vocal Recording/queen.mp3')" src="css/images/volume.png" width="100%" />
+        </div>
 
+        <div data-role="content" id="recordingContent">
+            <div class="voice-container">
+                <div class="row voice-grid">
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/microphonePlaceholder.png">
                         </div>
                     </div>
-    
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/microphonePlaceholder.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row photo-grid">
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/microphonePlaceholder.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/microphonePlaceholder.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row photo-grid">
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/microphonePlaceholder.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6 col-sm-6">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/microphonePlaceholder.png">
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <!-- End of Home page -->
+    </div>
+    <!-- End of Voice page -->
 
 </body>
 
