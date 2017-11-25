@@ -216,12 +216,16 @@ function openNav(navName) {
 }
 
 function closeNav(navName) {
-	document.getElementById(navName).style.width = "0";
+	if (document.getElementById(navName) != null){
+		document.getElementById(navName).style.width = "0";		
+	}
 }
 
 function navigateMusic(navName){
-	showSearch();
 	closeNav(navName);
+	var searchId = document.getElementById("search").classList;
+	searchId.add("display-content");	
+	showSearch();	
 }
 
 //Roland function to get a random music from the playlist
@@ -266,7 +270,7 @@ $(document).on('swipeleft', '.ui-page', function (event) {
 	{
 		var nextpage = $.mobile.activePage.next('[data-role="page"]');
 
-		if ($.mobile.activePage.attr('id') != "home") {
+		if ($.mobile.activePage.attr('id') != "first-page-id") {
 			if (nextpage.length > 0) {
 				$.mobile.changePage(nextpage, { transition: "slide", reverse: false }, true, true);
 			}
@@ -281,7 +285,7 @@ $(document).on('swiperight', '.ui-page', function (event) {
 	if (event.handled !== true) {
 		var prevpage = $(this).prev('[data-role="page"]');
 
-		if ($.mobile.activePage.attr('id') != "last-page-id") {
+		if ($.mobile.activePage.attr('id') != "home") {
 			if (prevpage.length > 0) {
 				$.mobile.changePage(prevpage, { transition: "slide", reverse: true }, true, true);
 			}
