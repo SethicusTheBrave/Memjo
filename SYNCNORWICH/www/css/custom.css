@@ -30,6 +30,13 @@ html body .ui-bar-inherit {
 	border-color:#CED6E3 !important;
 }
 
+
+
+
+
+
+
+
 h1{
 	color:#55C0E4 !important;
 	text-align: center;
@@ -201,6 +208,12 @@ margin-top: 10px;
 #favouritesContainer{
 	display: none;
 }
+
+#FavPhotos
+{
+	display: none;
+}
+#favStar{display: none;}
 
 .searchResultImage{
 	max-width:100% !important;

@@ -20,6 +20,7 @@
 
 </head>
 
+<!-- -->
 <body>
     <!-- Start of login page -->
     <div data-role="page" id="login">
@@ -490,12 +491,33 @@
             </div>
         </div>
 
+        <!--favourite control pics action removes normal content-->
+        
+        <div class="row">
+            <div id="normalStar">
+        <img style="width:80px; float:right;padding-right:30px;" onclick="clearPhotos()" src="assets/favourite.png">
+        </div>
+
+
+       
+
+
+    </div>
+
+
+        <!-- NORMAL PHOTOS CONTENT-->
         <div data-role="content" id="photosContent">
             <div class="photo-container">
                 <div class="row photo-grid">
                     <div class="col-md-6 col-xs-6 col-sm-6">
+                        
                         <div class="grid-image">
+<<<<<<< HEAD
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png" title="test">
+                     
+=======
                             <img class="searchResultImage" onclick="focusImage()" src="assets/new/buttonPhoto.png" title="test">
+>>>>>>> e6c68b9a699324d7f84ea9575a4407f2ca993528
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-6 col-sm-6">
@@ -528,8 +550,67 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                
         </div>
+            </div>
+
+
+
+
+            <!-- aditional fav-->
+            <!-- removed container and the format changed  needs to be formated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <div class="row">
+            <div  id="favStar">  
+                    <img style="width:80px; float:right;padding-right:30px;" onclick="clearFav()" src="assets/favouriteHover.png">
+             </div>
+            
+            
+            </div>
+            <div  id="FavPhotos">
+                    <div class="photo-container">
+                        <div class="row photo-grid">
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                
+                                <div class="grid-image">
+                                    <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png" title="test">
+                             
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                <div class="grid-image">
+                                    <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row photo-grid">
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                <div class="grid-image">
+                                    <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                <div class="grid-image">
+                                    <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row photo-grid">
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                <div class="grid-image">
+                                    <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 col-sm-6">
+                                <div class="grid-image">
+                                    <img class="searchResultImage" onclick="focusImage()" src="assets/ImagePlaceholder_photopage.png">
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+                    </div>
+
+
     </div>
     <!-- End of photos page -->
 
