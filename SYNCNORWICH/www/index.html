@@ -184,10 +184,12 @@
                             <i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
                         <a href="#music" onclick="navigateMusic('videosSideNav')">
                             <i class="fa fa-music" aria-hidden="true"></i> Music</a>
-                        <a href="#Videos" onclick="closeNav('videosSideNav')">
+                        <a href="#Videos" onclick="closeNav('videosSideNav')" style="color: #F5951C !important;">
                             <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
                         <a href="#recording" onclick="closeNav('videosSideNav')">
                             <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+                        <a href="#journal" onclick="closeNav('videosSideNav')">
+                            <i class="fa fa-book" aria-hidden="true"></i> Journal</a>
 
                     </div>
                 </div>
@@ -243,12 +245,14 @@
                         <i class="fa fa-home" aria-hidden="true"></i> Home</a>
                     <a href="#photos" onclick="closeNav('musicSideNav')">
                         <i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
-                    <a href="#music" onclick="navigateMusic('musicSideNav')">
+                    <a href="#music" onclick="navigateMusic('musicSideNav')" style="color: #F5951C !important;">
                         <i class="fa fa-music" aria-hidden="true"></i> Music</a>
                     <a href="#Videos" onclick="closeNav('musicSideNav')">
                         <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
                     <a href="#recording" onclick="closeNav('musicSideNav')">
                         <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+                    <a href="#journal" onclick="closeNav('musicSideNav')">
+                        <i class="fa fa-book" aria-hidden="true"></i> Journal</a>
                 </div>
             </div>
         </div>
@@ -313,7 +317,7 @@
                     <div class="col-xs-6 col-md-6">
                         <div class="artist-image-container-half">
                             <div class="artist-image">
-                                <img onclick="javascript:play('Music/queen.mp3')" src="assets/new/musicSong.png" class="exampleClass">
+                                <img id="barSong1" onclick="selectSong('barSong1')" src="assets/new/musicSong.png" class="exampleClass">
                             </div>
                         </div>
                     </div>
@@ -413,7 +417,7 @@
                     <div class="row music-grid">
                         <div class="col-md-6 col-xs-6 col-sm-6">
                             <div class="grid-image">
-                                <img class="searchResultImage" onclick="javascript:play('Music/queen.mp3')" src="assets/new/buttonMusic.png">
+                                <img id="gridSong1" class="searchResultImage" onclick="selectSongGrid('gridSong1')" src="assets/new/buttonMusic.png">
                             </div>
                         </div>
                         <div class="col-md-6 col-xs-6 col-sm-6">
@@ -479,7 +483,7 @@
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav('photoSideNav')">&times;</a>
                         <a href="#home" onclick="closeNav('photoSideNav')">
                             <i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                        <a href="#photos" onclick="closeNav('photoSideNav')">
+                        <a href="#photos" onclick="closeNav('photoSideNav')" style="color: #F5951C !important;">
                             <i class="fa fa-camera" aria-hidden="true"></i> Photos</a>
                         <a href="#music" onclick="navigateMusic('photoSideNav')">
                             <i class="fa fa-music" aria-hidden="true"></i> Music</a>
@@ -487,6 +491,9 @@
                             <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
                         <a href="#recording" onclick="closeNav('photoSideNav')">
                             <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+                        <a href="#journal" onclick="closeNav('photoSideNav')">
+                            <i class="fa fa-book" aria-hidden="true"></i> Journal</a>
+
                     </div>
                 </div>
             </div>
@@ -605,8 +612,10 @@
                             <i class="fa fa-music" aria-hidden="true"></i> Music</a>
                         <a href="#Videos" onclick="closeNav('recordingSideNav')">
                             <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
-                        <a href="#recording" onclick="closeNav('recordingSideNav')">
+                        <a href="#recording" onclick="closeNav('recordingSideNav')" style="color: #F5951C !important;">
                             <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
+                        <a href="#journal" onclick="closeNav('recordingSideNav')">
+                            <i class="fa fa-book" aria-hidden="true"></i> Journal</a>
 
                     </div>
                 </div>
@@ -677,8 +686,8 @@
                             <i class="fa fa-video-camera" aria-hidden="true"></i> Video</a>
                         <a href="#recording" onclick="closeNav('journalSideNav')">
                             <i class="fa fa-microphone" aria-hidden="true"></i> Voice</a>
-                        <a href="#journal" onclick="closeNav('journalSideNav')">
-                            <i class="fa fa-book" aria-hidden="true"></i> Voice</a>
+                        <a href="#journal" onclick="closeNav('journalSideNav')" style="color: #F5951C !important;">
+                            <i class="fa fa-book" aria-hidden="true"></i> Journal</a>
                     </div>
                 </div>
             </div>
@@ -686,7 +695,20 @@
 
         <div data-role="content" id="journalContent">
             <div class="journal-container">
-
+                <div id="janeJournalSmall">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/mobileJournalPage.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="janeJournalBig">
+                    <div class="col-md-12 col-xs-12 col-sm-12">
+                        <div class="grid-image">
+                            <img class="searchResultImage" onclick="focusImage()" src="assets/journalPage.png">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

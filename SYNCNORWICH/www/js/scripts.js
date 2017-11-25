@@ -85,6 +85,15 @@ function showPhotosFav(){
 		searchId.add("display-content");
 }
 
+function selectSong(songId){
+	javascript:play('Music/queen.mp3');
+	var searchId = document.getElementById(songId).src="assets/new/musicSongHover.png";
+}
+
+function selectSongGrid(songId){
+	javascript:play('Music/queen.mp3');
+	var searchId = document.getElementById(songId).src="assets/new/buttonMusicHover.png";
+}
 
 
 function clearFavPhotos()
@@ -223,7 +232,7 @@ $(document).on('swipeleft', '.ui-page', function (event) {
 	{
 		var nextpage = $.mobile.activePage.next('[data-role="page"]');
 
-		if ($.mobile.activePage.attr('id') != "first page id") {
+		if ($.mobile.activePage.attr('id') != "home") {
 			if (nextpage.length > 0) {
 				$.mobile.changePage(nextpage, { transition: "slide", reverse: false }, true, true);
 			}

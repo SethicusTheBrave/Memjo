@@ -106,10 +106,26 @@ h3{
 	.hamburger-menu{
 		font-size: 60px !important;
 	}
+
+	#janeJournalSmall{
+		display:none !important;
+	}
+
+	#janeJournalBig{
+		display:block!important;
+	}
+}
+
+#janeJournalBig{
+	display:none;
 }
 
 .journal-container{
-	background-image: url('');
+	background-image: url("../assets/mobileJournalPage.png");
+}
+
+.selected-tab{
+	color: F5951C !important;
 }
 
 .centerVideo{
