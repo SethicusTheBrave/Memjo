@@ -209,11 +209,9 @@ margin-top: 10px;
 	display: none;
 }
 
-#FavPhotos
-{
+.favourite-photos-container{
 	display: none;
 }
-#favStar{display: none;}
 
 .searchResultImage{
 	max-width:100% !important;

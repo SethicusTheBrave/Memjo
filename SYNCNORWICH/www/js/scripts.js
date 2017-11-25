@@ -55,9 +55,11 @@ function hideFavStar(){
 
 
 
-function showFavStar(){	var searchId = document.getElementById("favStar").classList;
+function showFavStar(){	
+	var searchId = document.getElementById("favStar").classList;
 
-	searchId.add("display-content");}
+	searchId.add("display-content");
+}
 
 
 
@@ -65,28 +67,42 @@ function showFavStar(){	var searchId = document.getElementById("favStar").classL
 
 function clearPhotos()
 {
-	var searchId = document.getElementById("photosContent").classList;
-	searchId.add("hide-content");
+	var searchId = document.getElementById("photo-container-id").classList;
+	
+		searchId.add("hide-content");
+		showPhotosFav();
+	// var searchId = document.getElementById("photo-container-id").classList;
+	// searchId.add("hide-content");
 
-	hideNormalStar();	
-	showFavStar();	
-	favPhotos();
+	// hideNormalStar();	
+	// showFavStar();	
+	// favPhotos();
+}
+
+function showPhotosFav(){
+	var searchId = document.getElementById("favourite-photos-container-id").classList;
+	
+		searchId.add("display-content");
 }
 
 
 
-function clearFav()
+function clearFavPhotos()
 {	
-	hideFav();
-	hideFavStar();
-	showNormalStar();
+	var searchId = document.getElementById("favourite-photos-container-id").classList;
+	
+	searchId.remove("display-content");
+
+	var photoCont = document.getElementById("photo-container-id").classList;
+	
+	photoCont.add("display-content");
 
 }
 
 
 function hideFav(){
 
-var searchId = document.getElementById("FavPhotos").classList;
+var searchId = document.getElementById("favPhotos").classList;
 searchId.add("hide-content");
 }
 
@@ -94,7 +110,7 @@ searchId.add("hide-content");
 
 function favPhotos()
 {
-	var searchId = document.getElementById("FavPhotos").classList;
+	var searchId = document.getElementById("favPhotos").classList;
 	
 		searchId.add("display-content");	
 }
