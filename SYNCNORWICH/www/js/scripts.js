@@ -8,36 +8,36 @@
 
 // this fires when app first loads when testing in a browser
 $(document).ready(function () {
-    console.log('ready');
+	console.log('ready');
 });
-  
+
 // global variables
 var exampleVariable = 1;
 var exampleVariable2 = "test";
 var x = "Music/queen.mp3";
 
 // example of local storage save
-function saveVariable(){
+function saveVariable() {
 	// saving example variable numberToSave to localstorage under a unique name 1234
 	localStorage.setItem('1234', exampleVariable);
 }
 
-function getVariable(){
+function getVariable() {
 	// saving example variable numberToSave to localstorage under a unique identifier 01234
 	var test = localStorage.getItem('1234')
 }
 
 
-function showSearch(){
+function showSearch() {
 	var searchId = document.getElementById("search").classList;
 	var barsId = document.getElementById("bars").classList;
 	var gridId = document.getElementById("grid").classList;
-	
+
 	searchId.add("display-content");
 	barsId.remove("display-content");
-	gridId.remove("display-content");	
+	gridId.remove("display-content");
 }
-function showBars(){
+function showBars() {
 	var searchId = document.getElementById("search").classList;
 	var barsId = document.getElementById("bars").classList;
 	var gridId = document.getElementById("grid").classList;
@@ -46,102 +46,98 @@ function showBars(){
 	barsId.add("display-content");
 	gridId.remove("display-content");
 }
-function showGrid(){
+function showGrid() {
 	var searchId = document.getElementById("search").classList;
 	var barsId = document.getElementById("bars").classList;
 	var gridId = document.getElementById("grid").classList;
-	
+
 	searchId.remove("display-content");
 	barsId.remove("display-content");
 	gridId.add("display-content");
 }
 
-function showSearchResults(){
+function showSearchResults() {
 	var searchId = document.getElementById("search-results").classList;
-	
+
 	searchId.add("display-content");
 }
-function showSearchFav(){
-	var searchId = document.getElementById("FavouritesContainer").classList;
-	
+function showSearchFav() {
+	var searchId = document.getElementById("favouritesContainer").classList;
+
 	searchId.add("display-content");
 }
 
 function openNav(navName) {
-    document.getElementById(navName).style.width = "250px";
+	document.getElementById(navName).style.width = "250px";
 }
 
 function closeNav(navName) {
-    document.getElementById(navName).style.width = "0";
+	document.getElementById(navName).style.width = "0";
 }
 
 //Roland function to get a random music from the playlist
-function play(object){
+function play(object) {
 	new Audio(object).play()
 }
 
 //more functions from Roland
-function clearAndFill(){
+function clearAndFill() {
 
-	var searchId = document.getElementById("videosContent").classList;
-	
+	var searchId = document.getElementById("videoContainer").classList;
+
 	searchId.add("hide-content");
 	showSearchFav();
 
 }
 
 
-function showNormalMovies()
-{
-
-var searchId=document.getElementById("videosContent").classList;
-searchId.add("display-content");
-hideDefault();
+function showNormalMovies() {
+	var searchId = document.getElementById("videoContainer").classList;
+	searchId.remove("hide-content");
+	hideDefault();
 }
 
 
-function hideDefault()
-{
-	var searchId = document.getElementById("FavouritesContainer").classList;
-	
+function hideDefault() {
+	var searchId = document.getElementById("favouritesContainer").classList;
+
 	searchId.add("hide-content");
 
 }
 
-function getFavourites(){
+function getFavourites() {
 
-//display new div
+	//display new div
 
 }
 
 // on swipe left - transition to next page
-$(document).on('swipeleft', '.ui-page', function(event){    
-    if(event.handled !== true) // stops event triggering more then once
-    {    
-        var nextpage = $.mobile.activePage.next('[data-role="page"]');
+$(document).on('swipeleft', '.ui-page', function (event) {
+	if (event.handled !== true) // stops event triggering more then once
+	{
+		var nextpage = $.mobile.activePage.next('[data-role="page"]');
 
-		if ($.mobile.activePage.attr('id') != "first page id"){
+		if ($.mobile.activePage.attr('id') != "first page id") {
 			if (nextpage.length > 0) {
-            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
-        }
-        event.handled = true;
-		}        
-    }
-    return false;         
+				$.mobile.changePage(nextpage, { transition: "slide", reverse: false }, true, true);
+			}
+			event.handled = true;
+		}
+	}
+	return false;
 });
 
 // on swipe right - transition to previous page
-$(document).on('swiperight', '.ui-page', function(event){     
-    if(event.handled !== true)
-    {      
-        var prevpage = $(this).prev('[data-role="page"]');
+$(document).on('swiperight', '.ui-page', function (event) {
+	if (event.handled !== true) {
+		var prevpage = $(this).prev('[data-role="page"]');
 
-		if ($.mobile.activePage.attr('id') != "last-page-id"){
+		if ($.mobile.activePage.attr('id') != "last-page-id") {
 			if (prevpage.length > 0) {
-            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
-        }
-        event.handled = true;
-		}        
-    }
-    return false;            
+				$.mobile.changePage(prevpage, { transition: "slide", reverse: true }, true, true);
+			}
+			event.handled = true;
+		}
+	}
+	return false;
 });

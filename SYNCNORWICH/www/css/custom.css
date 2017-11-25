@@ -62,8 +62,6 @@ margin-top: 10px;
 	display:none;
 }
 
-
-
 .display-content{
 	display:block !important;
 }
@@ -72,14 +70,15 @@ margin-top: 10px;
 	display: none;
 }
 
-#grid{
-	background-color: black !important;
+.music-grid{
+	padding: 0 0 10px 0;
 }
 
-
-
-
-
+.hamburger-menu{
+	font-size:30px;
+	cursor:pointer;
+	padding: 10px;
+}
 
 .sidenav {
     height: 100%;
@@ -129,7 +128,7 @@ margin-top: 10px;
 	width:60px;
 }
 
-#FavouritesContainer{
+#favouritesContainer{
 	display: none;
 }
 
@@ -151,5 +150,13 @@ margin-top: 10px;
 }
 
 .exampleClass{
+	width:100%;
+}
+
+.custom-navbar-toggle{
+	padding: 0 0 10px 0;
+}
+
+.video-placeholder{
 	width:100%;
 }
