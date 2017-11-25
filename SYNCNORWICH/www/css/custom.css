@@ -95,6 +95,14 @@ h3{
 	#query{
 		padding:20px;
 	}
+
+	.hamburger-menu{
+		font-size: 60px !important;
+	}
+}
+
+.journal-container{
+	background-image: url('');
 }
 
 .centerVideo{
