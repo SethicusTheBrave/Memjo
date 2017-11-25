@@ -75,6 +75,11 @@ function closeNav(navName) {
 	document.getElementById(navName).style.width = "0";
 }
 
+function navigateMusic(navName){
+	showSearch();
+	closeNav(navName);
+}
+
 //Roland function to get a random music from the playlist
 function play(object) {
 	new Audio(object).play()
