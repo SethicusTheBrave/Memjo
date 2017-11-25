@@ -22,11 +22,96 @@ function saveVariable() {
 	localStorage.setItem('1234', exampleVariable);
 }
 
+
+
 function getVariable() {
 	// saving example variable numberToSave to localstorage under a unique identifier 01234
 	var test = localStorage.getItem('1234')
 }
 
+
+
+function hideNormalStar(){
+		
+	var searchId = document.getElementById("normalStar").classList;
+
+	searchId.add("hide-content");}
+
+
+
+function showNormalStar(){
+
+	var searchId = document.getElementById("normalStar").classList;
+	searchId.add("display-content");
+}	
+
+
+
+function hideFavStar(){
+	
+	var searchId = document.getElementById("favStar").classList;
+	searchId.add("hide-content");
+}
+
+
+
+function showFavStar(){	var searchId = document.getElementById("favStar").classList;
+
+	searchId.add("display-content");}
+
+
+
+
+
+function clearPhotos()
+{
+	var searchId = document.getElementById("photosContent").classList;
+	searchId.add("hide-content");
+
+	hideNormalStar();	
+	showFavStar();	
+	favPhotos();
+}
+
+
+
+function clearFav()
+{	
+	hideFav();
+	hideFavStar();
+	showNormalStar();
+
+}
+
+
+function hideFav(){
+
+var searchId = document.getElementById("FavPhotos").classList;
+searchId.add("hide-content");
+}
+
+
+
+function favPhotos()
+{
+	var searchId = document.getElementById("FavPhotos").classList;
+	
+		searchId.add("display-content");	
+}
+
+
+
+
+
+
+
+
+function showNormalPhotos()
+{
+	var searchId = document.getElementById("photosContent").classList;
+	
+		searchId.add("display-content");
+}
 
 function showSearch() {
 	var searchId = document.getElementById("search").classList;
