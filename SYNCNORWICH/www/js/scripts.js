@@ -84,15 +84,49 @@ function showPhotosFav(){
 	
 		searchId.add("display-content");
 }
-
+var barsFlag = false;
 function selectSong(songId){
 	javascript:play('Music/queen.mp3');
-	var searchId = document.getElementById(songId).src="assets/new/musicSongHover.png";
+	if (barsFlag == false){
+		var searchId = document.getElementById(songId).src="assets/new/musicSongHover.png";
+		barsFlag = true;		
+	}
+	else if (barsFlag == true){
+		var searchId = document.getElementById(songId).src="assets/new/musicSong.png";
+		barsFlag = false;		
+	}
 }
 
+var gridFlag = false;
 function selectSongGrid(songId){
 	javascript:play('Music/queen.mp3');
 	var searchId = document.getElementById(songId).src="assets/new/buttonMusicHover.png";
+
+	if (gridFlag == false){
+		var searchId = document.getElementById(songId).src="assets/new/buttonMusicHover.png";
+		gridFlag = true;		
+	}
+	else if (gridFlag == true){
+		var searchId = document.getElementById(songId).src="assets/new/buttonMusic.png";
+
+		gridFlag = false;		
+	}
+}
+
+var voiceFlag = false;
+function selectVoiceGrid(voiceId){
+	javascript:play('Music/voiceRecording.wav');
+	var searchId = document.getElementById(voiceId).src="assets/new/buttonVoicesHover.png";
+
+	if (voiceFlag == false){
+		var searchId = document.getElementById(voiceId).src="assets/new/buttonVoicesHover.png";
+		voiceFlag = true;		
+	}
+	else if (voiceFlag == true){
+		var searchId = document.getElementById(voiceId).src="assets/new/buttonVoices.png";
+
+		voiceFlag = false;		
+	}
 }
 
 
@@ -266,4 +300,10 @@ function signIn(){
 
 function goHome(){
 	window.location.href = "#home";
+}
+
+function showSearchResults(){
+	var searchId = document.getElementById("search-results").classList;
+	
+		searchId.add("display-content");
 }
