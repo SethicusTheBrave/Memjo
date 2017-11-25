@@ -89,12 +89,21 @@ margin-top: 10px;
 	display:block !important;
 }
 
+.music-custom-navbar{
+	padding:20px !important;
+}
+
 .hide-content{
 	display: none;
 }
 
 .music-grid, .photo-grid{
 	padding: 0 0 10px 0;
+}
+
+
+.photo-container{
+	margin:0 auto;
 }
 
 .hamburger-menu{
