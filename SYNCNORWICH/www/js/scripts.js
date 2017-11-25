@@ -68,7 +68,7 @@ function showSearchFav() {
 }
 
 function openNav(navName) {
-	document.getElementById(navName).style.width = "250px";
+	document.getElementById(navName).style.width = "190px";
 }
 
 function closeNav(navName) {
@@ -141,3 +141,14 @@ $(document).on('swiperight', '.ui-page', function (event) {
 	}
 	return false;
 });
+
+function signIn(){
+	document.getElementById("loginContent").style.display="none";
+	document.getElementById("ajax-loader").style.display="block";
+	
+    setTimeout("goHome()", 1500);
+}
+
+function goHome(){
+	window.location.href = "#home";
+}
