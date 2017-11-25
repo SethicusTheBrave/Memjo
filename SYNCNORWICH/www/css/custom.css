@@ -6,14 +6,6 @@
    
 }
 
-.ui-page, body{
-	background-image:
-    linear-gradient(
-       
-      white, #fffef4
-	  
-    );
-}
 .ui-bar-a,
 .ui-page-theme-a .ui-bar-inherit,
 html body .ui-bar-inherit {
@@ -66,6 +58,43 @@ h3{
 .homepage-row{
 	margin: 0 0 10px 0;
 	padding: 0 30px 0 30px;
+}
+
+@media screen and (min-width: 900px) {
+    .homepage-row{
+		margin: 0 0 10px 0;
+		padding: 0 170px 0 170px;
+	}
+
+	h1{
+		font-size: 5em !important;
+		padding: 10px !important;
+	}
+
+	.col-sm-6{
+		padding:25px !important;
+	}
+
+	.custom-navbar{
+		padding:40px;
+	}
+
+	.photo-container{
+		margin-top: 70px;
+	}
+
+	.music-custom-navbar{
+		padding: 0 0 305px 0 !important;
+	}
+
+	.artist-image-container-half{
+		width: 100% !important;
+		padding:10px !important;
+	}
+
+	#query{
+		padding:20px;
+	}
 }
 
 .centerVideo{
