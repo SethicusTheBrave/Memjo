@@ -48,6 +48,11 @@ margin-top: 10px;
 
 
 }
+
+.stars{
+
+	width:80px; float:right;padding-right:40px;
+}
 	
 .footer {
 	bottom: 0;
